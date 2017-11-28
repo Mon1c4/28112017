@@ -1,0 +1,26 @@
+# 28112017
+require("foreign")
+srural<-read.spss("C:/Users/Sala-D2/Downloads/solorural.sav")
+#198 variables, 18100 datos. 
+#Niñ@s de 5 a 17 años de zonas rurales
+#Módulo de trabajo infantil. INEGI_2013.
+srural1<-data.frame(srural)
+#Var dependiente= persona para la que trabajo eldia (T_PER)
+          #categorias:#1. FAMILIAR-2.NO FAMILIAR-3.TRABAJA SOLO
+#Vari independientes
+  #SEXO (SEX) 1- hombre, 2- mujer
+  #Grupos de edad (EDA1) 1-5 A 9 AÑOS, 2-10 a 13 años, 3- 14 a 17 años
+  #Sexo jefe del hogar(SEX_JEFE) 1-HOMBRE, 2-MUJER
+  #Tamaño hogar(TAM_HOG)1- 1 a 3 integrantes, 2- 4 a 5 integrantes, 3-6 a 7 integrantes, 4-8 y más integrantes
+  #Ocupacion jefe hogar (OCU_JEFE) 1-OCUPADO, 2-NO OCUPADO
+  #Tipo de apoyo recibido (T_APO1) 
+        #categorias: #beca para estudiar, otro programa del gobierno, ayuda de un familiar 
+                      #que vive en otro hogar, otro tipo de ayuda, no ha recibido ayuda
+
+#_______TAREA_________
+#LIMPIAR LA BASAE
+#HACER UN ANUEVA BASE CON LAS VARIABLES QUE NOS INTERESAN
+#APLICAR EL MODELO DE REGRESION LOGISTICA
+#INTERPRETAR LOS COEFICIENTES
+sexo<-srural1$sex
+sexo
